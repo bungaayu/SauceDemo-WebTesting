@@ -16,6 +16,7 @@ public class CartPage extends PageObject {
     private final By checkoutButton = By.cssSelector("#checkout");
     private final By removeButton = By.id("remove-sauce-labs-fleece-jacket");
     private final By continueShopping = By.id("continue-shopping");
+
     public void ClickCheckoutButton(){
         driver.findElement(checkoutButton).click();
     }
@@ -28,5 +29,4 @@ public class CartPage extends PageObject {
     public void ClickContinueShopping(){
         driver.findElement(continueShopping).click();
     }
-
 }

@@ -57,5 +57,10 @@ public class CheckOutStepDef {
     @Then("I redirected to checkout complete page")
     public void IRedirectedToCheckoutCompletePage(){
         assertEquals("https://www.saucedemo.com/checkout-complete.html",checkoutStep2Page.getUrl());
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
     }
 }

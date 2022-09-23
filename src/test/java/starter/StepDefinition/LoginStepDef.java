@@ -33,24 +33,19 @@ public class LoginStepDef {
     @Then("I redirected to inventory page")
     public void IRedirectedtoInventoryPage(){
         assertEquals("https://www.saucedemo.com/inventory.html", loginPage.getUrl());
-//        assertEquals("PRODUCTS", inventoryPage.getHeaderTitle());
-//        assertTrue(inventoryPage.isCartVisible());
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
     }
-//    @Then("Error message {string}")
-//    public void ErrorMessage(String message){
-//
-//    }
+
     @Given("I already log in")
     public void IAlreadyLogIn(){
         loginPage.open();
         loginPage.InputUsername("standard_user");
         loginPage.InputPassword("secret_sauce");
         loginPage.ClickLoginButton();
-//        try {
-//            Thread.sleep(1000000);
-//        } catch (InterruptedException e){
-//            e.printStackTrace();
-//        }
     }
     @Given("I already log in and add one item to cart") //untuk sorting
     public void IAlreadyLogInAndAddOneItemToCart(){
@@ -61,5 +56,15 @@ public class LoginStepDef {
         inventoryPage.ClickAddButton();
         assertTrue(inventoryPage.isRemoveDisplayed());
     }
-
 }
+
+
+
+
+
+//    @Then("Error message {string}")
+//    public void ErrorMessage(String message){
+//
+//    }
+//        assertEquals("PRODUCTS", inventoryPage.getHeaderTitle());
+//        assertTrue(inventoryPage.isCartVisible());

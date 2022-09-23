@@ -19,9 +19,15 @@ public class AddtoCartStepDef {
     @Then("the product should be added to cart")
     public void TheProductShouldBeAddedtoCart(){
         assertTrue(inventoryPage.isRemoveDisplayed());
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
     }
     @And("I already add products to cart")
     public void IAlreadyAddProductsToCart(){
         inventoryPage.ClickAddButton();
+
     }
 }

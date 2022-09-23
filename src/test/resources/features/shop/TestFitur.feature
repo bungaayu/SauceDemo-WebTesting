@@ -1,5 +1,5 @@
 Feature: Testing Fitur
-  Scenario Outline: Testing Fitur Add, Remove, dan Continue
+  Scenario Outline: Testing Fitur Sorting, Remove, dan Continue
     Given I already log in and add one item to cart
     When I click sorting by "<sorting>"
     Then item should be sorted by "<sorting>"
