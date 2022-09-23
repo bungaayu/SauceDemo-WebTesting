@@ -1,4 +1,4 @@
-Feature: Testing Fitur
+Feature: Testing All Fitur
   Scenario Outline: Testing Fitur Sorting, Remove, dan Continue
     Given I already log in and add one item to cart
     When I click sorting by "<sorting>"

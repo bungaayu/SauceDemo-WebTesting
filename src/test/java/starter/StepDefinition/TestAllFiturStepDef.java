@@ -9,7 +9,7 @@ import starter.Pages.LoginPage;
 
 import static org.junit.Assert.*;
 
-public class TestFiturStepDef {
+public class TestAllFiturStepDef {
     LoginPage loginPage;
     InventoryPage inventoryPage;
     CartPage cartPage;

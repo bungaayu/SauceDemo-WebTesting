@@ -18,11 +18,11 @@ public class SortingStepDef {
     @Then("item should be sort by {string}")
     public void ItemShouldbeSortBy(String sortBy){
         assertEquals(sortBy, inventoryPage.getSortingActive());
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e){
-            e.printStackTrace();
-        }
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
     }
 
 }

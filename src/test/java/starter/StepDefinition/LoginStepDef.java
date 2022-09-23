@@ -10,7 +10,6 @@ import starter.Pages.LoginPage;
 import static org.junit.Assert.*;
 
 public class LoginStepDef {
-
     LoginPage loginPage;
     InventoryPage inventoryPage;
     CartPage cartPage;

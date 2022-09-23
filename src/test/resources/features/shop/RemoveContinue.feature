@@ -4,4 +4,4 @@ Feature: Remove item and Continue Shop button
     When I click Cart icon then i redirected to cart page
     And I click button remove
     And I click Continue Shopping button
-    Then the page return to the inventory page
+    Then the page back to the inventory page

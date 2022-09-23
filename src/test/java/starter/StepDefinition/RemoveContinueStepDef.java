@@ -1,6 +1,7 @@
 package starter.StepDefinition;
 
 import io.cucumber.java.en.And;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import starter.Pages.CartPage;
 import starter.Pages.InventoryPage;
@@ -25,11 +26,15 @@ public class RemoveContinueStepDef {
     @And("I click Continue Shopping button")
     public void IClickContinueShoppingButton(){
         cartPage.ClickContinueShopping();
-        assertEquals("https://www.saucedemo.com/inventory.html",loginPage.getUrl());
-        try {
-            Thread.sleep(1000000);
-        } catch (InterruptedException e){
-            e.printStackTrace();
-        }
     }
+    @Then("the page back to the inventory page")
+    public void ThePageBacktoTheInventoryPage(){
+        assertEquals("https://www.saucedemo.com/inventory.html",loginPage.getUrl());
+//        try {
+//            Thread.sleep(1000000);
+//        } catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
+    }
+
 }
